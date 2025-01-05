@@ -1,0 +1,27 @@
+{
+  "name": "rails-rspack",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "NODE_ENV=development rspack serve",
+    "build": "NODE_ENV=production rspack build"
+  },
+  "devDependencies": {
+    "@rspack/cli": "^1.1.8",
+    "@rspack/core": "^1.1.8",
+    "@types/css-modules": "^1.0.5",
+    "@types/node": "^22",
+    "@types/react": "^18.3.1",
+    "@types/react-dom": "^18.3.1",
+    "css-loader": "^7.1.2",
+    "rspack-manifest-plugin": "^5.0.3",
+    "sass": "^1.81.0",
+    "sass-loader": "^16.0.4",
+    "style-loader": "^4.0.0",
+    "typescript": "^5"
+  },
+  "dependencies": {
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1"
+  }
+}
