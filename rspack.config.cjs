@@ -12,7 +12,7 @@ module.exports = {
   mode: isDev ? 'development' : 'production',
   // stats: 'minimal',
   entry: {
-    application: path.resolve(__dirname, "app/javascript/application.tsx"),
+    main: path.resolve(__dirname, "app/javascript/main.tsx"),
   },
   resolve: {
     extensions: ['.tsx', '.ts', '.jsx', '.js', '.json']

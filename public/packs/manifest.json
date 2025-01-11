@@ -1,0 +1,5 @@
+{
+  "main.css": "http://localhost:8081/packs/main.css",
+  "main.js": "http://localhost:8081/packs/main.js",
+  "main.css.map": "http://localhost:8081/packs/main.css.map"
+}
