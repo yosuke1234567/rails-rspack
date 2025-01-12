@@ -1,0 +1,35 @@
+services:
+  web:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - "0.0.0.0:8080:8080"
+      - "0.0.0.0:8081:8081"
+    volumes:
+      - .:/myapp
+      - bundle_cache:/myapp/vendor/bundle
+      - node_modules_cache:/myapp/node_modules
+    environment:
+      RAILS_ENV: development
+    #   DATABASE_URL: postgres://postgres:password@db:5432/myapp_development
+    # depends_on:
+    #   - db
+    command: bash -c "rm -rf tmp/pids/server.pid && bin/dev"
+
+  # db:
+  #   image: postgres:15
+  #   container_name: postgres_db
+  #   environment:
+  #     POSTGRES_USER: postgres
+  #     POSTGRES_PASSWORD: password
+  #     POSTGRES_DB: myapp_development
+  #   ports:
+  #     - "5432:5432"
+  #   volumes:
+  #     - db_data:/var/lib/postgresql/data
+
+volumes:
+  bundle_cache:
+  node_modules_cache:
+  # db_data:

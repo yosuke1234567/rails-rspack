@@ -65,3 +65,4 @@ end
 
 
 gem "simpacker"
+gem "rubyzip", "~> 2.4.1"
